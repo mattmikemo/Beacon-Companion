@@ -2,3 +2,5 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {background: #00050b; min-height: 100vh;}
