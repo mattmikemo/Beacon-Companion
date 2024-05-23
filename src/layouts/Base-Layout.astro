@@ -7,7 +7,7 @@ const { title, description = "A companion app for Beacon TTRPG",
 image = "https://placehold.co/400" } = Astro.props;
 ---
 
-<html lang="en">
+<html class="dark" lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -18,7 +18,7 @@ image = "https://placehold.co/400" } = Astro.props;
         <meta property="og:image" content={image} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="dark:bg-black">
 		<slot />
 	</body>
 </html>

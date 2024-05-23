@@ -3,11 +3,13 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@icons/*": ["src/icons/*"],
       "@layouts/*": ["src/layouts/*"],
       "@utils/*": ["src/utils/*"],
-      "@types/*": ["/types/*"]
+      "@types/*": ["/types/*"],
+      "@aceternityui/*": ["src/components/react/aceternityui/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react"
