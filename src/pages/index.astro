@@ -3,13 +3,15 @@
 import Layout from '../layouts/Base-Layout.astro'
 import CardStack from '@/components/CardStack.astro'
 import HeroImage from "@/components/HeroImage.astro"
+import HeroText from '@/components/HeroText.astro'
+import GridBackground from '@/components/GridBackground.astro'
 ---
 
-<Layout title="Hello World">
+<Layout title="Beacon TTRPG Companion">
 	<main>
-	<HeroImage img="Beacon-Companion-Hero-1800x800.jpg" />
-	<CardStack />
-	<img src="" alt="">
+	<HeroImage img="/images/Beacon-Companion-Homepage-Hero-1800x800.jpg" />
+	<HeroText herotext="is a tabletop roleplaying game (TTRPG) inspired by the high fantasy stories of the Final Fantasy video games and the tactical gameplay of the Lancer and Dungeon & Dragons 4th Edition TTRPGs." />
+	<GridBackground />
 	</main>
 	
 </Layout>

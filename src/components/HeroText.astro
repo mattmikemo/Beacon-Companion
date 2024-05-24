@@ -1,0 +1,37 @@
+---
+import GradientText from "./GradientText.astro"
+const { herotext } = Astro.props
+---
+
+<section class="fadeUp-animation fadeIn-animation hero-text-container">
+    <h2 class="hero-text text-semibold dark:text-white"><GradientText gradienttext="BEACON" client:load />{herotext}</h2>
+</section>
+
+<style>
+    .hero-text-container {padding: 4rem; display: flex; flex-direction: column-reverse;}
+    .hero-text {font-size: 4rem; margin: 0 auto; text-align: center; transition: transform .2s, color .2s, font-stretch .2s, font-weight .2s;}
+    .text-semibold {font-weight: 700; font-stretch: 100%;}
+
+    @keyframes fadeUpIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.fadeUp-animation {
+  animation-name: fadeUpIn;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}
+
+.fadeIn-animation {
+  animation-name: fadeUpIn;
+  animation-delay: 1s;
+  animation-duration: 2s;
+}
+</style>

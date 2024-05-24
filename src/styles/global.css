@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('../../assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../../assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+  
+  html {height: 100vh;}
+
+  body {
+    font-family: 'Mona Sans'; height: 100%; background-repeat: no-repeat; background-attachment: fixed;
+  }
+
+  body h1, h2, h3, h4, h5, h6, p {color: aliceblue !important;}
+  .uppercase {text-transform: uppercase;}
+
+  .primary-dark-bg {
+    background-image: linear-gradient(to bottom left, #0d1117, #161b22);
+  }
