@@ -1,9 +1,10 @@
 ---
+import CardStack from '@/components/CardStack.astro';
 import { ViewTransitions } from 'astro:transitions';
+
 interface Props {
     title: string;
 }
-
 const { title, description = "A companion app for Beacon TTRPG", 
 image = "https://placehold.co/400" } = Astro.props;
 ---
@@ -23,6 +24,7 @@ image = "https://placehold.co/400" } = Astro.props;
         <ViewTransitions />
 	</head>
 	<body class="bg-white primary-dark-bg">
+	<CardStack />
 		<slot />
 	</body>
 </html>
