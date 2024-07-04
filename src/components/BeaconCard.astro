@@ -1,0 +1,58 @@
+---
+interface Props {
+    source: string;
+    action: string;
+    title: string;
+    phase_number: string;
+    phase_name: string;
+    standard_action_description: string;
+    modifier: string;
+    standard_action_condition: string;
+    description_phase_title: string;
+    standard_action_tag: string;
+    spending_cost: string;
+    limiter_description: string;
+    ability_parameter: string;
+} 
+
+const { title, phase_number, phase_name, standard_action_description, footer_specifier } = Astro.props;
+const { class: source, action  } = Astro.props;
+---
+
+<div class:list={[source, action]}>
+    <div class="title-section">
+        <div class="title-type-row">
+            <h3 class="card-title">{title}</h3> <h4 class="card-type">{phase_number} {phase_name}</h4>
+        </div>
+        <div class="modifier-row">
+            <h4 class="card-limiter">{limiter_description}</h4>
+            <h4 class="card-parameter">{ability_parameter}</h4>
+        </div>
+    </div>
+    <div class="card-content">                             
+        <div class="body-section">
+            <p class="card-body">{standard_action_description}</p>
+        </div>
+        <div class="footer-section">
+            <p class="card-footer">{footer_specifier}</p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Card Type Style - These classes will drive the look of the card based on the database prop that gets passed into a class */
+
+    /* Card Source */
+    .weapon {}
+    .trait {}
+    .spell {}
+    .skill {}
+    .support-item {}
+    .limit-break {}
+
+    /* Card Action Type */
+    .action {}
+    .reaction {}
+    .passive-ability {}
+    .attack {}
+</style>
