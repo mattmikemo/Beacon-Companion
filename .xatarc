@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Matthew-Morrison-s-workspace-sscbmm.us-east-1.xata.sh/db/Beacon-Companion",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

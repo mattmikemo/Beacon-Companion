@@ -1,0 +1,101 @@
+{
+  "id": "mig_cr6joq0h9rgqssknjmr0",
+  "checksum": "1:ad9f531c15cd1deb644cdc4b7d81ae08418d7043c05d04319de91ae579c1050d",
+  "operations": [
+    {
+      "addTable": {
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "created_at",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "title",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "phase_number",
+          "type": "int"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "phase_name",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "standard_action_description",
+          "type": "text"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "modifier",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "standard_action_condition",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "description_phase_title",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "standard_action_tag",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "Spending_Cost",
+          "type": "string"
+        },
+        "table": "standardActions"
+      }
+    }
+  ]
+}

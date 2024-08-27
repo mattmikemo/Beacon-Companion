@@ -1,24 +1,11 @@
 ---
 import AppLayout from "@/layouts/App-Layout.astro";
-import { db, Comment } from "astro:db";
-
-const comments = await db.select().from(Comment);
 ---
 
 <AppLayout title="Standard Actions">
 	<main>
-	<h1>Compendium</h1>
+	  <h1>Compendium</h1>
     <h2>Comments</h2>
-
-{
-  comments.map(({ authorId, body }) => (
-    <article>
-      <p>author name {authorId}</p>
-      <p>{body}</p>
-    </article>
-  ))
-}
-
 	</main>
 	
 </Layout>
